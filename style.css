@@ -1,0 +1,59 @@
+body {
+    font-family: 'poppins' , sans-serif;
+    font-weight: 400;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 'cabecalio cabecalio '
+                         'section section'
+                         'footer footer';
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-image:url(./images/bg-desktop.svg) ;
+    background-color:var(--cor-principal);
+}
+
+.cabecalio{
+    grid-area: cabecalio;
+}
+
+.cabecalio .logo {
+    padding: 40px;
+    margin: 0 30px;
+}
+.cabecalio .logo img {
+    max-width: 215px;
+}
+
+
+.section {
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section .images {
+    padding: 20px;
+    margin-left: 50px;
+}
+.section .info {
+    max-width: 50vh;
+}
+
+.section .info h1 {
+    color: #fff;
+    font-size:40px ;
+}
+
+.section .info p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: aquamarine;
+    grid-area: footer;
+}
